@@ -1,0 +1,49 @@
+name: Repo improvement request
+description: Suggest a specific, verifiable improvement to make next.
+title: "[Improve]: "
+body:
+  - type: input
+    id: repo_url
+    attributes:
+      label: Target repository URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Preferred change type
+      options:
+        - Documentation
+        - Setup / tooling
+        - Bug fix
+        - Tests
+        - Refactor
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and constraints
+      description: Anything to avoid, preferred files/areas, or required behavior.
+      placeholder: "Avoid changing CI; keep changes docs-only; update README setup steps..."
+    validations:
+      required: false
+  - type: textarea
+    id: verification
+    attributes:
+      label: How to verify
+      description: Commands or steps to validate the change.
+      placeholder: "npm test\nnpm run build"
+    validations:
+      required: false
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk tolerance
+      options:
+        - Low (docs / formatting only)
+        - Medium (safe refactors / small fixes)
+        - High (feature work / larger changes)
+    validations:
+      required: true
