@@ -7,6 +7,16 @@ The goal is to make commits that improve repositories in a real way:
 documentation, project cleanup, bug fixes, tests, or small feature updates.
 Avoid empty commits made only for contribution streaks.
 
+## Quick Start
+
+- Pick a daily commit target: `./scripts/daily-target.sh`
+- Create a daily log file: `./scripts/new-daily-log.sh 2026-05-25`
+
+## Docs
+
+- Daily workflow: `docs/daily-workflow.md`
+- Prompt templates: `docs/prompt-templates.md`
+
 ## Current Focus
 
 - Keep profile and project repositories active with meaningful updates.
